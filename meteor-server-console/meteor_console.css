@@ -1,0 +1,161 @@
+/* TODO clean up this mess ... */
+
+* {
+  font-family: Menlo, Monaco, Consolas, dejavu sans mono, Lucida Console, monospace;
+  font-size: 12px;
+}
+
+ul.jqtree-tree .jqtree-toggler {
+  left: -1.1em;
+  top: 0.25em;
+}
+
+.label {
+  padding: 1.5px 2px 1.5px 2px;
+  font-size: 85%;
+}
+
+.preserve-whitespace {
+  white-space: pre;
+}
+
+#console_view {
+  width: 100%;
+}
+
+#output {
+  padding-left: 10px;
+}
+
+.string_value {
+  color: rgb(210, 180, 60);
+}
+
+.eval_tree {
+  font-size: 0.9em;
+}
+
+#console_view, #watch_view, .scope {
+  position: absolute;
+}
+
+#watch_view {
+  right: 0;
+  width: 0;
+  padding-left: 5px;
+  display: none;
+}
+
+.result {
+  margin: 0;
+  border-bottom: rgb(180, 180, 180);
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.result.log .additional_lines {
+  cursor: pointer;
+}
+
+.log_entry {
+  margin: 0;
+}
+
+.prompt {
+  color: darkcyan;
+}
+
+.watch {
+  border-left: rgb(180, 180, 180);
+  border-left-style: solid;
+  border-left-width: thin;
+  border-bottom: rgb(180, 180, 180);
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  padding-left: 7px;
+}
+
+.eval_expr {
+  margin: 0;
+  border-bottom: rgb(200, 200, 200);
+  border-bottom-style: dotted;
+  border-bottom-width: thin;
+}
+
+#input_info {
+  padding-right: 7px;
+  padding-top: 2px;
+  float: left;
+}
+
+#input_info .prompt {
+  padding-left: 10px;
+}
+
+#input_eval {
+  overflow: hidden;
+  display: block;
+}
+
+#run_eval {
+  border: 0;
+  outline: none;
+  height: 22px;
+  width: 100%;
+}
+
+.watch .scope {
+  right: 5px;
+  margin-top: 4px;
+}
+
+.result .scope {
+  right: 2px;
+  margin-top: 1px;
+}
+
+.table tbody > tr > td, .log_additional_lines {
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.table {
+  margin: 0;
+}
+
+.watch_controls {
+  right: 2px;
+}
+
+.current_scope, .log_additional_lines {
+  display: none;
+}
+
+.show_additional_lines {
+  display: block;
+}
+
+.error_location {
+  background-color: rgb(180,180,180);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.error_location.important {
+  background-color: rgb(200,140,140);
+}
+
+.error_location.internal, .error_method.internal {
+  opacity: 0.5;
+}
+
+.error_method {
+  background-color: rgb(220,220,220);
+  margin-right: 5px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#result_output_tmpl, #internal_output_tmpl, #watch_tmpl, #autocomplete_output_tmpl, #helper_output_tmpl, #result_log_tmpl {
+  display: none;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>meteor-server-console</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="lib/jquery-ui.css" rel="stylesheet" media="screen">
+    <link href="lib/jqtree.css" rel="stylesheet" media="screen">
+    <link href="meteor_console.css" rel="stylesheet" media="screen">
+    <!-- JS -->
+    <script src="lib/underscore.js"></script>
+    <script src="lib/jquery-2.0.3.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <script src="lib/tree.jquery.js"></script>
+    <script src="lib/helpers.js"></script>
+    <script src="lib/meteor-ddp.js"></script>
+    <script src="lib/ansi2html.js"></script>
+    <script src="treedata.js"></script>
+    <script src="server_eval.js"></script>
+    <script src="meteor_console.js"></script>
+  </head>
+  <body>
+    <div id="watch_view"></div>
+    <div id="console_view">
+      <div id="output"></div>
+
+      <span id="input_info">
+        <span class="prompt"><strong>#</strong></span>
+        <span class="label label-primary current_scope"></span>
+      </span>
+      <span id="input_eval"><input type="text" placeholder="..." id="run_eval"><span>
+    </div>
+
+    <!-- templates -->
+    <div id="internal_output_tmpl" class="result internal">
+      <div class="internal_msg">
+        <span class="label"></span>
+      </div>
+    </div>
+
+    <div id="result_log_tmpl" class="result log">
+        <div>
+          <span class="glyphicon glyphicon-plus additional_lines"></span>
+          <span class="log_level label">Log</span>
+          <span class="log_entry preserve-whitespace"></span>
+          <span class="label label-warning scope"></span>
+        </div>
+        <div class="log_additional_lines preserve-whitespace"></div>
+    </div>
+
+    <div id="autocomplete_output_tmpl" class="result autocomplete">
+      <div class="eval_expr">
+        <strong class="prompt">#</strong>
+        <span></span>
+      </div>
+      <div class="autocomplete">
+        <table class="table table-striped">
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="result_output_tmpl" class="result">
+      <span class="label label-primary scope"></span>
+      <div class="eval_expr">
+        <strong class="prompt">#</strong>
+        <span></span>
+      </div>
+      <div class="content"></div>
+    </div>
+
+    <div id="helper_output_tmpl" class="result helper">
+      <span class="label label-warning scope"></span>
+      <div class="eval_expr">
+        <strong class="prompt">#</strong>
+        <span></span>
+      </div>
+      <div class="content"></div>
+    </div>
+
+    <div id="watch_tmpl" class="watch">
+      <div class="btn-group btn-group-xs watch_controls">
+        <button type="button" class="btn btn-default btn-lg watch_refresh">
+          <span class="glyphicon glyphicon-refresh"></span>
+        </button>
+        <button type="button" class="btn btn-default btn-lg watch_remove">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>
+      </div>
+      <span class="label label-primary scope"></span>
+      <div class="eval_expr">
+        <span class="expr"></span>
+      </div>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>
