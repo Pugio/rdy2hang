@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "meteor-server-eval": {
+      "path": "../meteor-packages/meteor-server-eval"
+    },
+    "facebook-sdk": {}
+  }
+}

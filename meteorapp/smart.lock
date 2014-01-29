@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "meteor-server-eval": {
+        "path": "../meteor-packages/meteor-server-eval"
+      },
+      "facebook-sdk": {}
+    },
+    "packages": {
+      "meteor-server-eval": {
+        "path": "../meteor-packages/meteor-server-eval"
+      },
+      "facebook-sdk": {
+        "git": "https://github.com/hugesuccess/facebook-sdk.git",
+        "tag": "v0.0.22",
+        "commit": "05fba3b342f3bc714ef68700e8e9ceeb46e694c7"
+      }
+    }
+  }
+}
