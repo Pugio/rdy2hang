@@ -1,0 +1,122 @@
+// Your custom SCSS should be written here...
+@import '../bower_components/gumby-parallax/_parallax.scss';
+@import 'toggles.scss';
+
+.navbar{
+	.row{padding-top:10px;}
+	margin-bottom:0px;
+}
+
+.wrapper{
+	&.shaded{
+		background-color: #E9E9E9 !important;
+	}
+	
+	#user-bar{
+		height:60px;	
+		
+		img {
+			height:60px;
+			float:left;
+			margin-right:15px;
+		}	
+		
+		.field{
+			.input{
+				height:28px;
+				line-height: 26px;
+			}
+		}
+		
+		.user-location{
+			float:right;
+			margin-top:-28px;
+			margin-right:60px;
+			p {
+				margin-bottom: 5px;
+			}
+			
+			.edit{
+				color:#1f62a1;
+				font-size:10px;
+				cursor: pointer;
+			}
+			
+		#delay{
+			opacity: .5;
+		}	
+		#delay:hover{
+			opacity:1;
+		}
+		}
+	}
+	
+		#main {
+			//height:2000px;
+			background: url('../img/bg2.jpg'), url('../img/bg3.jpg');
+			background-repeat: repeat-y;
+			background-position: top, bottom;
+
+			background-size:cover;
+			padding:50px;
+		}
+
+
+
+.margins {
+    background: rgba(255,255,255,.15);
+    margin: 0px auto 50px;
+    border-radius: 30px;
+    padding: 30px;
+    article {
+        background: rgba(255,255,255,.9);
+        border-radius: 20px;
+        padding: 60px;
+        text-align: center;
+    }
+}
+
+}
+
+#feed {
+	.fbpic{
+		height:80px;
+	}
+	.image {	
+		height:80px;
+		width: 80px;
+	}
+	li {
+		border-bottom: 1px #c9c9c9 solid;
+//		border-top: 1px #A9A9A9 solid;
+		padding-top:10px;
+		padding-bottom: 10px;
+	}
+	h5 {
+		font-weight: 600;
+	}
+	p {
+		@include font-size($norm);
+	}
+	.postData{
+		color:rgba(14,134,0,1);
+	
+		&.future{
+		color:rgba(115,115,0,0.95);
+	}}
+}
+
+footer {
+	background:#2a2a2a;
+	border-top:#5e5e5e 5px;
+	height:60px;
+	padding: 20px;
+	margin:auto;
+	
+	
+	li{
+		display:inline;
+		padding:20px;
+	}
+	
+}
