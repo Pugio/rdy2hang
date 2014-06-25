@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> 
+
+	<link rel="stylesheet" href="css/customStyles.css"/> 
+
+	  <link rel="stylesheet" href="css/brownGreen.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" /> 
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> -->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<script type='application/javascript' src='/js/fastclick.js'></script>
+<script src="js/clickfix.js"></script>
+
+
+		<link rel="stylesheet" href="css/customStyles.css"/>
+	
+
+
+</head> 
+<body> 
+
+
+<!-- Start of first page -->
+<div data-role="page" id="home"  >
+
+	<!--  <div data-role="header">
+		<h1>Foo</h1>
+	</div> -->
+  <div data-role="panel" id="homePanel"> 
+    <h2>Avisha NessAiver</h2>
+     <form method="post" action="blah.asp">
+      <label for="location">Location</label>
+      <input type="text" name="location" id="location" placeholder="Silver Spring, MD" data-clear-btn="true">
+      <label for="Phone">Phone</label>
+      <input type="text" name="Phone" id="Phone" placeholder="XXX-XXX-XXXX" data-clear-btn="true">
+      <label for="phonePublic">Display Phone Number</label>
+      <input type="checkbox" data-inline="true" name="phonePublic" id="phonePublic" data-clear-btn="true">
+      <label for="userStatus">Status</label>
+      <input type="text" name="userStatus" id="userStatus" placeholder="Pizza anyone?" data-clear-btn="true">
+ 
+
+
+    </form>
+    <a href="#pageone" id="userRdyButton" data-theme="d" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left">Ready!</a>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="matisPanel"> 
+    <h2>Matis Kleidman</h2>
+    <p>Phone number: 773-528-7483</p>
+    <p>Address: 121 N. LaSalle Street
+    <br>Chicago, Illinois 60602 USA</p>
+    <p>Email: thebestadelepitt@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Contact</a>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="panel" id="denaPanel"> 
+    <h2>Dena Bayla Ariella Caplin</h2>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <br>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-comment ui-btn-icon-left">Contact</a>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+  </div> 
+  <div data-role="popup" id="myPopup" class="ui-content">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+      <h2>User Settings</h2>
+      <p>Ready later today?</p>
+      <h3>Location</h3>
+      <h3>Privacy</3>
+    </div>
+
+	<div data-role="content" >
+		<div id="logo">
+			<h1>rdy2hang?</h1>
+		</div>
+		<form id="rdytoggle" class="center-wrapper">
+		    <label for="flip-checkbox-3"></label>
+		    <input type="checkbox" data-role="flipswitch" name="flip-checkbox-3" id="flip-checkbox-3" data-on-text="Yes" data-off-text="No" data-wrapper-class="custom-size-flipswitch" data-theme="c">
+		</form>
+
+		<div class="choice_list">
+		 
+		<ul data-role="listview" data-inset="true" id="userpanel" data-theme="b">
+		 
+		<li><a class="ui-icon-info" data-position-to="#userTime"  href="#homePanel" data-rel="popup" ><img src="img/fbHead.jpg"/> <h2>Avisha NessAiver</h2> <input type="text" name="status" id="status" placeholder="Pizza?"><div> <span class="ui-li-count distance">3 miles</span> <span id="userTime" class="ui-li-count time">1h 2m</span></div></a></li>
+
+		</ul>
+		 
+		<ul data-role="listview" data-inset="true" data-theme="a">
+		 
+		<li id='test'><a href="#denaPanel"> <img src="img/fbDena.jpg"/> <h2>Dena Bayla Ariella Caplin</h2> <p><span >Let's all go to the leprechaun museum!</span></p> <span class="ui-li-count distance">3 miles</span> <span class="ui-li-count time">1h 2m</span></a></li>
+		 
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		 
+		<li><a href="#"> <img src="img/fbShalev.jpg "/> <h2> Restaurant Diona</h2> <p> 1 star </p> </a></li>
+		 
+		<li><a href="#"> <img src="img/fbHead.jpg "/> <h2> Tai Shan</h2> <p> 3 stars </p> </a></li>
+		 
+		<li><a href="#"> <img src=" img/fbMatis.jpg"/> <h2> Arcade</h2> <p> 2 stars </p> </a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		<li><a href="#matisPanel"> <img src="img/fbMatis.jpg "/> <h2>Matis Kleidman</h2> <p><span >Pizza anyone?</span></p> <span class="ui-li-count distance">5.6 miles</span> <span class="ui-li-count time">2h 34m</span></a></li>
+		 
+		</ul>
+		 
+		</div>
+
+
+	</div><!-- /content -->
+
+
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#foo">Back to foo</a></p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

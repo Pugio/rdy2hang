@@ -1,0 +1,157 @@
+.ui-panel-wrapper{
+
+background:url(../img/bg.jpg);
+background-size:cover;
+
+box-shadow: 0px 0px 30px 5px rgba(107, 105, 105, 0.3) inset,
+
+0px 0px 0px 1px rgba(107, 105, 105, 0.4) inset;
+
+}
+.ui-panel-wrapper
+
+#rdytoggle{
+	margin-top:-25px;
+}
+
+#rdytoggle *{font-family:arial !important;color:white !important;font-size:1.5em !important}
+.center-wrapper{
+text-align: center;
+}
+.center-wrapper  {
+margin: 0 auto;
+}
+
+/* Custom indentations are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -3.0em;
+    height:1.9em;
+}
+
+.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active .ui-btn.ui-flipswitch-on {
+	margin-left: -.55em;
+}
+.custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 1.2em;
+    height:3em;
+}
+/* Custom widths are needed because the length of custom labels differs from
+   the length of the standard labels */
+.custom-size-flipswitch.ui-flipswitch {
+    width: 8.875em;
+    height:3em;
+}
+.custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+    padding-left: 7em;
+    width: 1.875em;
+
+}
+@media (min-width: 28em) {
+    /*Repeated from rule .ui-flipswitch above*/
+    .ui-field-contain > label + .custom-size-flipswitch.ui-flipswitch {
+        width: 1.875em;
+    }
+}
+
+
+#logo{
+margin-bottom:-50px;
+}
+
+#userpanel h2{
+	margin-top:.2em;
+	color:#603813;
+	text-shadow: 0 1px  0  #eeeeee;
+}
+#userpanel .ui-input-text{
+	width:92%;
+	margin-bottom:0px;
+	margin-top:0px;
+	height:26px;
+	border-radius:.3em;
+}
+
+#userpanel input{
+	padding:2px 5px;
+	min-height:25px;
+}
+#userpanel li{
+	padding-bottom:0px;
+}
+
+#userpanel .ui-btn-active {
+	background-color: #c7b299 !important; 
+	color:#603813 !important;
+}
+
+
+.ui-li-count.time.ui-body-inherit {
+	margin-top:-3em;
+	margin-left:30px;
+	
+	border-radius:.3em;
+	border:none;
+	color:green;
+	right:.4em;
+}
+ .ui-li-count.distance.ui-body-inherit {
+	margin-top: 1.4em;
+	border-radius:.3em;
+ 	border:none;
+ 	right:.4em;
+}
+
+li p, li h2{
+	color:#1E0B01;
+
+	/*background-color:#ffffff;*/
+}
+
+/*a:visited{
+	background-color:#fff;
+}
+#userpanel .ui-btn-active{
+	background-color:#fff;
+}*/
+
+#logo{
+
+background:url(../img/rdy2hang-linebrown.svg) no-repeat;
+background-size: contain;
+background-position: center;
+
+width:100%;
+
+height:88px;
+
+text-indent:-999px;
+
+font-size:0px;
+
+margin:-15px auto 0 auto;
+
+
+}
+
+
+/*User Side Panel Styles*/
+#userRdyButton.ui-btn{
+    color      : white;
+    background : #006837;
+    text-shadow: 1px 1px #00331B;
+}
+/*.ui-panel-inner{
+	background-color:#E8DBCF;
+}*/
+.ui-panel-inner label{
+	font-weight: bold;
+}	
+
+
+/*CSS TOUCH WORKAROUND*/
+a, button, .myelements
+{
+    -ms-touch-action: manipulation; /* IE10  */
+    touch-action: manipulation;     /* IE11+ */
+}
